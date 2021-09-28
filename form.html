@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h2>Text fields</h2>
+<p>the <strong> input type="text"</strong>define a one-line text input field:</p>
+ 
+
+<form action="/action.page.php">
+
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname"<br><br>
+<label for="lname">Last name:</label> <br>
+<input type="text" id="lname"  name="lname"><br><br>
+<input type="submit" onclick="btn()"value="Submit">
+<input type="button" value="Reset" onclick="reset()"/>
+</form>
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text fields is 20 characters.</p>
+<input type="url" name="search" id="search"/>
+<br>
+<em>Hello</em>
+</form>
+
+
+</body>
+<script type="text/javascript">
+	function btn(){
+		r=prompt("Are you sure want to submit! y/n");
+		if(r=="y"){
+		alert("Your form submitted ");}
+		else{
+			alert("you canceld your responce ");
+		}
+
+	}
+	function reset(){
+		fname.value=" ";
+		lname.value=" ";
+
+	}
+</script>
+</html>
